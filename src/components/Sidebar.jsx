@@ -3,8 +3,8 @@
  import styles from "./styles";
 
  const Sidebar = ()=>{
-     return (<div style={styles.Sidebar}>
-
+     return (
+         <div style={styles.Sidebar}>
                 //Single Widget
                 <div className="widget catagory mb-50">
                     //Widget Title

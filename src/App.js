@@ -4,24 +4,28 @@ import './App.css';
 import styled from 'styled-components';
 import Navigation from "./components/Navigation";
 import Sidebar from "./components/Sidebar";
-import OwlCarousel from 'react-owl-carousel2';
-import coat from "./img/coat.jpg";
-import dress1 from "./img/dress1.jpg";
-import dress2 from "./img/dress2.png";
-import lady from "./img/lady.jpg";
-import lady2 from "./img/lady2.png";
-import options from "./components/Owl";
+import Owl from "./components/Owl";
+import SingleItem from "./components/SingleItemPage";
+import Home from "./components/Home";
+
+
 
 function App() {
   return ( <div className="site-wrap">
           <Navigation />
-          <Sidebar />
+          <div className="row">
+              <div className="col-sm-2">
+                  <Sidebar />
+              </div>
+              <div className="col-xl-8, col-sm-8">
+                    <Owl />
+              </div>
 
-          <OwlCarousel ref="car" options={options}>
-              <div><img src={coat} alt="The Last of us"/></div>
-              <div><img src={dress1} alt="GTA V"/></div>
-              <div><img src={dress2} alt="Mirror Edge"/></div>
-          </OwlCarousel>
+          </div>
+          <div className="row">
+              <SingleItem />
+          </div>
+
       </div>
   );
 }
