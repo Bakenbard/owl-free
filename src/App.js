@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar";
 import Owl from "./components/Owl";
 import SingleItem from "./components/SingleItemPage";
 import Home from "./components/Home";
+import About from "./components/About";
 
 
 
@@ -19,6 +20,8 @@ function App() {
               </div>
               <div className="col-xl-8, col-sm-8">
                     <Owl />
+                    <About />
+                    <Home />
               </div>
 
           </div>
