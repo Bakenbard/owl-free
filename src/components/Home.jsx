@@ -1,21 +1,31 @@
 import React from "react";
+import Sidebar from "./Sidebar";
+import Owl from "./Owl";
+import About from "./About";
+import Card from "./ItemCard";
 
 
-function Home () {
+
+const Home = ()=>{
+
     return <div className="container">
-                <div className="row">
-                    <div className="col-12 col-sm-6 col-md-4">
-                        <div className="card">
-                            <img src="..." className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">Название карточки</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make
-                                        up the bulk of the card's content.</p>
-                                    <navLink href="#" className="btn btn-primary">Переход куда-нибудь</navLink>
-                                </div>
-                        </div>
+            <div className="row">
+                <div className="col-sm-2">
+                    <Sidebar />
+                </div>
+                <div className="col-xl-8, col-sm-8">
+                    <div className="row">
+                        <Owl />
+                    </div>
+                    <div className="row">
+                        <About />
+                    </div>
+                    <div className="container">
+                        <Card/>
                     </div>
                 </div>
+
+            </div>
         </div>
 }
 

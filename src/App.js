@@ -1,35 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import styled from 'styled-components';
 import Navigation from "./components/Navigation";
-import Sidebar from "./components/Sidebar";
-import Owl from "./components/Owl";
-import SingleItem from "./components/SingleItemPage";
 import Home from "./components/Home";
-import About from "./components/About";
+import {BrowserRouter, NavLink, Route} from "react-router-dom";
+import Contacts from "./components/Contacts";
+import Fitting from "./components/Fitting";
+import Profile from "./components/Profile";
 
 
 
-function App() {
-  return ( <div className="site-wrap">
-          <Navigation />
-          <div className="row">
-              <div className="col-sm-2">
-                  <Sidebar />
-              </div>
-              <div className="col-xl-8, col-sm-8">
-                    <Owl />
-                    <About />
-                    <Home />
-              </div>
-
-          </div>
-          <div className="row">
-              <SingleItem />
-          </div>
-
-      </div>
+function App(props) {
+  return ( <div className="container-fluid">
+              <BrowserRouter>
+                  <div className="row">
+                  <Navigation/>
+                  </div>
+                  <Route path="/home" render={()=><Home function={props.function}/>}/>
+                  <Route path="/contactUs" component={Contacts}/>
+                  <Route path="/fitting" component={Fitting}/>
+                  <Route path="/lk" render={()=><Profile function={props.function}/>}/>
+              </BrowserRouter>
+        </div>
   );
 }
 

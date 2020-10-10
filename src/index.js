@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {getUser} from "./states";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App function={getUser} />
   </React.StrictMode>,
   document.getElementById('root')
 );
