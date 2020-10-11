@@ -6,3 +6,7 @@
 .input:hover{
     cursor: pointer;
 }
+.input:active{
+    border-color: rgb(28, 54, 77);
+    box-shadow: rgb(252, 218, 118);
+}

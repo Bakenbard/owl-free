@@ -1,12 +1,12 @@
 import React from "react";
+import "./ComponentStyle/AboutStyle.css"
 
 function About () {
-    return <div className="row">
-        <div className="container-fluid">
-            <div className="col-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, deserunt eum laboriosam magni quibusdam rem repellat. Adipisci alias architecto, autem, cupiditate inventore ipsam minima perspiciatis praesentium quisquam repudiandae sapiente, totam.</p>
-            </div>
-        </div>
+    return <div className="container">
+        <div className="about">
+                <h1>Каталог дубленок</h1>
+                <p >Рады приветствовать Вас на нашем сайте!<br/>Хотим предложить Вам тщательно подобранный ассортимент дубленок, кожаных курток и пальто. Все наши иделия сочетают в себе качество, удобство и продуманный дизайн.<br/>Хороших покупок!</p>
+         </div>
     </div>
 }
 

@@ -9,22 +9,29 @@ import slide3 from "./img/slide3.jpg";
 function Owl() {
     return <OwlCarousel
         loop
-        margin={10}
-        nav
         items="1"
         autoplay
     >
             <div className="item">
-                <h4>...</h4>
                 <img src={slide1} alt=""/>
+                <div className="carousel-caption d-none d-md-block">
+                    <h3>ДАВНО МЕЧТАЛ?</h3>
+                    <p>Узнайте о товарах со скидками, акциях и специальных предложениях</p>
+                </div>
             </div>
             <div className="item">
-                <h4>...</h4>
                 <img src={slide2} alt=""/>
+                <div className="carousel-caption d-none d-md-block">
+                    <h3>НОВЫЕ МОДЕЛИ В ПРОДАЖЕ</h3>
+                    <p>Мы старамся регулярно расширять ассортимент - посмотрите, что появилось в продаже совсем недавно!</p>
+                </div>
             </div>
             <div className="item">
-                <h4>...</h4>
                 <img src={slide3} alt=""/>
+                <div className="carousel-caption d-none d-md-block">
+                    <h3>НАМ ИНТЕРЕСНО ВАШЕ МНЕНИЕ</h3>
+                    <p>Расскажите о сделанной покупке или о том, какую модель Вы ищите</p>
+                </div>
             </div>
     </OwlCarousel>
 }

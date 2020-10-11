@@ -10,7 +10,7 @@ import Profile from "./components/Profile";
 
 function App(props) {
     return (<BrowserRouter>
-                <div className="row">
+                <div className="container">
                     <Navigation/>
                 </div>
                 <div className="container">

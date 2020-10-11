@@ -1,0 +1,12 @@
+
+.itemCard {
+    font-family: 'Verdana';
+    font-size: 15px;
+    width: 100%;
+    border-radius: 0;
+    border: 0.01rem solid rgb(60, 60, 60);
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(60, 60, 60);
+
+}
