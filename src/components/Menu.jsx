@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import {BrowserRouter, NavLink, Route} from "react-router-dom";
 import LinkStyle from "./ComponentStyle/LinkStyle";
 
@@ -19,3 +19,4 @@ const Menu  = ()=> {
 }
 export default Menu;
 
+*/

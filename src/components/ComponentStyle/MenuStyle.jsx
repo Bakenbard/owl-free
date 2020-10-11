@@ -6,13 +6,13 @@ const MenuStyle = styled.div`
     width: 100%;
     height: 3.5rem;
     padding-top: 0.5rem;
-    background-color: RGBA(23, 21, 24, 0.7);
+    background-color: rgb(60, 60, 60);
     color: rgb(225, 186, 67);    
-    border: 2px, solid;
-    border-color: rgb(214, 168, 46);
+    border: 0 0 0 2px solid rgb(252, 218, 118);
+    border-radius: 0
     text-align: center;
     align: center;
-    box-shadow: 0 0 10px 10px grey;
+    box-shadow: 0 0 10px 10px rgb(252, 218, 118);
 `;
 
 export default MenuStyle;

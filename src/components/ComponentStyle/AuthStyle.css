@@ -1,0 +1,8 @@
+.input {
+    border-radius: 0;
+    border: 2px solid rgb(252, 218, 118);
+    text-align: center;
+}
+.input:hover{
+    cursor: pointer;
+}

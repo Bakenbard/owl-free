@@ -8,20 +8,19 @@ import Fitting from "./components/Fitting";
 import Profile from "./components/Profile";
 
 
-
 function App(props) {
-  return ( <div className="container-fluid">
-              <BrowserRouter>
-                  <div className="row">
-                  <Navigation/>
-                  </div>
-                  <Route path="/home" render={()=><Home function={props.function}/>}/>
-                  <Route path="/contactUs" component={Contacts}/>
-                  <Route path="/fitting" component={Fitting}/>
-                  <Route path="/lk" render={()=><Profile function={props.function}/>}/>
-              </BrowserRouter>
-        </div>
-  );
+    return (<BrowserRouter>
+                <div className="row">
+                    <Navigation/>
+                </div>
+                <div className="container">
+                    <Route path="/home" render={() => <Home function={props.function}/>}/>
+                    <Route path="/contactUs" component={Contacts}/>
+                    <Route path="/fitting" component={Fitting}/>
+                    <Route path="/lk" render={() => <Profile function={props.function}/>}/>
+                </div>
+            </BrowserRouter>
+    );
 }
 
 export default App;
