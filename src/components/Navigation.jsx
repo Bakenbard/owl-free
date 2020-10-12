@@ -8,7 +8,7 @@ import "./ComponentStyle/AuthStyle.css";
 
 const Navigation = ()=>{
     return (        <div className="container-fluid navi">
-                     <nav className="navbar navbar-expand-lg navi">
+                     <nav className="navbar navbar-expand-lg navi" id="top">
 
                          <NavLink className="flex-sm-fill text-sm-center nav-link link navbar-brand" to="/"><img
                              src={logo} className={logo}/></NavLink>

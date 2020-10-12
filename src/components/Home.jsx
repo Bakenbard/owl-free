@@ -40,7 +40,7 @@ class Home extends React.Component {
 
     render() {
         return <div>
-            <div className="row">
+            <div className="row" id="">
                 <div className="col-2">
                     <Sidebar/>
                 </div>
