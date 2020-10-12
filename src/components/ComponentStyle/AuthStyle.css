@@ -1,12 +1,24 @@
 .input {
     border-radius: 0;
-    border: 2px solid rgb(252, 218, 118);
+    border: 2px solid rgb(60, 60, 60);
     text-align: center;
+    color: rgb(60, 60, 60);
 }
 .input:hover{
+    border: 2px solid rgb(252, 218, 118);
     cursor: pointer;
+    color: rgb(60, 60, 60);
+    background-color: white;
 }
 .input:active{
     border-color: rgb(28, 54, 77);
     box-shadow: rgb(252, 218, 118);
+}
+.sub {
+    border: none;
+    color: rgb(60, 60, 60);
+}
+.sub:hover {
+    color: rgb(252, 218, 118);
+    background-color: white;
 }

@@ -8,7 +8,7 @@ const Auth = ()=> {
                     <input type="email" name="email" id="email" className="form-control input" placeholder="Email" require />
                 </div>
                 <div className="col-3">
-                    <button type="button" className="btn btn-outline-warning enter">
+                    <button type="submit" className="btn btn-outline-warning enter">
                         <i className="fas fa-sign-in-alt fa-2x"></i>
                     </button>
                 </div>

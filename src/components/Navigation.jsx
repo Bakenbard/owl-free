@@ -1,13 +1,17 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import LinkStyle from "./ComponentStyle/LinkStyle.css";
-
+import "./ComponentStyle/NavStyle.css";
+import logo from "./img/logoimg.gif";
+import "./ComponentStyle/LogoImgStyle.css";
+import "./ComponentStyle/AuthStyle.css";
 
 
 const Navigation = ()=>{
-    return (        <div className="container-fluid">
-                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                         <NavLink className="flex-sm-fill text-sm-center nav-link link navbar-brand" to="/home">Главная</NavLink>
+    return (        <div className="container-fluid navi">
+                     <nav className="navbar navbar-expand-lg navi">
+
+                         <NavLink className="flex-sm-fill text-sm-center nav-link link navbar-brand" to="/home"><img
+                             src={logo} className={logo}/></NavLink>
                          <button className="navbar-toggler" type="button" data-toggle="collapse"
                                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                  aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +31,11 @@ const Navigation = ()=>{
                                  </li>
                              </ul>
                              <form className="form-inline my-2 my-lg-0">
-                                 <input className="form-control mr-sm-2" type="search" placeholder="Search"
+                                 <input className="form-control mr-sm-2 input" type="search" placeholder="Search"
                                         aria-label="Search"/>
-                                     <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search
-                                     </button>
+                                 <button className="btn btn-outline-success my-2 my-sm-0 sub" type="submit">
+                                     <i className="fas fa-sign-in-alt fa-2x"></i>
+                                 </button>
                              </form>
                          </div>
                      </nav>
