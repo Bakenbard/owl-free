@@ -11,7 +11,7 @@ const Card = (props)=>{
 
             <NavLink to="/profile" className="link">
                 <div className="card itemCard">
-                    <img src={coat} className="card-img-top" />
+                    <img src={"img/"+props.img} className="card-img-top" />
                     <div className="card-body">
                         <h5 className="card-title">{props.title}</h5>
                         <p className="card-text">{props.price}Теперь здесь будет русскоязычный текст для проверки работ шрифтов</p>

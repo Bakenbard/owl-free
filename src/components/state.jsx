@@ -1,14 +1,3 @@
-const items = {
-    0: {header: "Пальто", cost: 678},
-    1: {header: "Длинный польт", cost: 678},
-    2: {header: "Куу", cost: 678},
-    3: {header: "Курт", cost: 678},
-    4: {header: "Кобейн", cost: 677},
-    5: {header: "Пальто", cost: 565},
-    6: {header: "Пальто", cost: 666},
-    7: {header: "Пальто", cost: 354}
-}
-
 const user = {
     name: "Olga",
     lastname: "Vasina",
@@ -25,6 +14,8 @@ export function getUser(){
     return user;
 }
 
-export function getItems(){
+export async function getItems(){
+    let response = await fetch("http://warmskin.bakenbard9.beget.tech/getItems");
+    let items = await response.json();
     return items;
 }
