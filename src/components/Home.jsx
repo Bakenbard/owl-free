@@ -27,10 +27,7 @@ const Home = (props)=>{
                         <Sidebar/>
                     </div>
                     <div className="col-10 home">
-                            <Owl />
-                        <div className="row">
-                            <About />
-                        </div>
+                        <Owl />
                         <div className="row">
                             {cardItems}
                         </div>
