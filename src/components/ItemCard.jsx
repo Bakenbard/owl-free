@@ -4,20 +4,21 @@ import coat from "./img/coat.jpg";
 import "./ComponentStyle/ItemCardStyle.css";
 import "./ComponentStyle/LinkStyle.css";
 
-const Card = ()=>{
-    return (
-            <div className="col-12 col-sm-6 col-md-4 col-xl-3">
 
-                <NavLink to="/profile" className="link">
-                    <div className="card itemCard">
-                        <img src={coat} className="card-img-top" />
-                        <div className="card-body">
-                            <h5 className="card-title">Name</h5>
-                            <p className="card-text">Теперь здесь будет русскоязычный текст для проверки работ шрифтов</p>
-                        </div>
+const Card = (props)=>{
+    return (
+        <div className="col-12 col-sm-6 col-md-4 col-xl-3">
+
+            <NavLink to="/profile" className="link">
+                <div className="card itemCard">
+                    <img src={coat} className="card-img-top" />
+                    <div className="card-body">
+                        <h5 className="card-title">{props.title}</h5>
+                        <p className="card-text">{props.price}Теперь здесь будет русскоязычный текст для проверки работ шрифтов</p>
                     </div>
-                </NavLink>
-            </div>
+                </div>
+            </NavLink>
+        </div>
     )
 }
 

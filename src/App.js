@@ -6,6 +6,7 @@ import {BrowserRouter, NavLink, Route} from "react-router-dom";
 import Contacts from "./components/Contacts";
 import Fitting from "./components/Fitting";
 import Profile from "./components/Profile";
+import SingleItem from "./components/SingleItemPage";
 
 
 function App(props) {
@@ -14,10 +15,11 @@ function App(props) {
                     <Navigation/>
                 </div>
                 <div className="container">
-                    <Route path="/home" render={() => <Home function={props.function}/>}/>
+                    <Route exact path="/" render={() => <Home getItems={props.getItems}/>}/>
                     <Route path="/contactUs" component={Contacts}/>
                     <Route path="/fitting" component={Fitting}/>
-                    <Route path="/lk" render={() => <Profile function={props.function}/>}/>
+                    <Route path="/lk" render={() => <Profile getUser={props.getUser}/>}/>
+                    <Route path="/item" component={SingleItem}/>
                 </div>
             </BrowserRouter>
     );

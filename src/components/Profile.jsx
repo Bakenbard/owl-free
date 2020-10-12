@@ -1,10 +1,7 @@
 import React from "react";
-import {getUser} from "../states";
-
-
 
 const Profile = (props)=>{
-    let user = props.function(getUser);
+    let user = props.getUser();
     return (<div>
             <h2>{user.name} {user.lastname}</h2>
             <p>{user.adress}</p>

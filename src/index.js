@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {getUser} from "./states";
+import {getItems, getUser} from "./components/state";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App function={getUser} />
+    <App getItems={getItems} getUser={getUser}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

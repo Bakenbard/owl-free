@@ -10,7 +10,7 @@ const Navigation = ()=>{
     return (        <div className="container-fluid navi">
                      <nav className="navbar navbar-expand-lg navi">
 
-                         <NavLink className="flex-sm-fill text-sm-center nav-link link navbar-brand" to="/home"><img
+                         <NavLink className="flex-sm-fill text-sm-center nav-link link navbar-brand" to="/"><img
                              src={logo} className={logo}/></NavLink>
                          <button className="navbar-toggler" type="button" data-toggle="collapse"
                                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
