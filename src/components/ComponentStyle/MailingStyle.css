@@ -1,0 +1,33 @@
+.mailing {
+    text-align: center;
+
+}
+
+.form {
+    text-align: center;
+
+
+}
+.field {
+    text-align: center;
+}
+.field:hover {
+    border-color: rgb(252, 218, 118);
+}
+
+.field:active:after {
+
+}
+.button {
+    color: rgb(60, 60, 60);
+    background-color: white;
+    border-radius: 0;
+    border-color: rgb(60, 60, 60);
+}
+.button:hover {
+    border-color: rgb(252, 218, 118);
+    color: rgb(252, 218, 118);
+    background-color: white;
+
+}
+

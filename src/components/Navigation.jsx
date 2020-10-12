@@ -31,7 +31,7 @@ const Navigation = ()=>{
                                  </li>
                              </ul>
                              <form className="form-inline my-2 my-lg-0">
-                                 <input className="form-control mr-sm-2 input" type="search" placeholder="Search"
+                                 <input className="form-control mr-sm-2 input" type="search" placeholder="Email"
                                         aria-label="Search"/>
                                  <button className="btn btn-outline-success my-2 my-sm-0 sub" type="submit">
                                      <i className="fas fa-sign-in-alt fa-2x"></i>

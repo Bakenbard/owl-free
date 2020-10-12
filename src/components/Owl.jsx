@@ -15,7 +15,7 @@ function Owl() {
             <div className="item">
                 <img src={slide1} alt=""/>
                 <div className="carousel-caption d-none d-md-block">
-                    <h3>ДАВНО МЕЧТАЛ?</h3>
+                    <h3>ДАВНО МЕЧТАЛА?</h3>
                     <p>Узнайте о товарах со скидками, акциях и специальных предложениях</p>
                 </div>
             </div>

@@ -4,11 +4,9 @@ function ItemDescription () {
     return <div className="col-md-4">
         <div className="product-meta-data">
             <div className="line"></div>
-            <p className="product-price">$180</p>
-            <a href="product-details.html">
-                <h6>White Modern Chair</h6>
-            </a>
-            //Avaiable -->
+            <p className="product-price">12315</p>
+            <h4>Польт</h4>
+
             <p className="avaibility"><i className="fa fa-circle"></i> In Stock</p>
         </div>
 

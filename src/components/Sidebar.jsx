@@ -2,6 +2,7 @@
  import styled from "styled-components";
  import "./ComponentStyle/SidebarStyle.css";
  import "./ComponentStyle/LinkStyle.css";
+ import slide3 from"./img/slide3.jpg";
 
  const Sidebar = ()=>{
      return (  <div className="container-fluid side">

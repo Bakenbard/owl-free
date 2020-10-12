@@ -1,0 +1,38 @@
+.skills {
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+.skill1 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 10px 0 10px rgb(252, 218, 118);
+    color: rgb(60, 60, 60);
+    text-align: center;
+    padding-top: 2rem;
+    margin-right: -1rem;
+    border-right: none;
+
+}
+.skill2 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0 0 10px rgb(252, 218, 118);
+    color: rgb(60, 60, 60);
+    text-align: center;
+    padding-top: 2rem;
+
+}
+.skill3 {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset -10px 0 10px rgb(252, 218, 118);
+    color: rgb(60, 60, 60);
+    text-align: center;
+    padding-top: 2rem;
+    border-left: none;
+
+}
+.bg {
+    background-color: rgb(252, 218, 118);
+}

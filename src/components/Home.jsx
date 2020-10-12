@@ -5,23 +5,14 @@ import "./ComponentStyle/HomeStyle.css";
 import {NavLink} from "react-router-dom";
 import "./ComponentStyle/ItemCardStyle.css";
 import "./ComponentStyle/LinkStyle.css";
+import Card from "./ItemCard";
+import Mailing from "./Mailing";
+import Block from "./BlockHor";
+import Skills from "./Skills";
 
 
-const Card = (props)=>{
-    return (
-        <div className="col-12 col-sm-6 col-md-4 col-xl-3">
-            <NavLink to="/profile" className="link">
-                <div className="card itemCard">
-                    <img src={"images/"+props.img} className="card-img-top" />
-                    <div className="card-body">
-                        <h5 className="card-title">{props.title}</h5>
-                        <p className="card-text">{props.price}Теперь здесь будет русскоязычный текст для проверки работ шрифтов</p>
-                    </div>
-                </div>
-            </NavLink>
-        </div>
-    )
-}
+
+
 
 class Home extends React.Component {
     constructor(props) {
@@ -54,9 +45,14 @@ class Home extends React.Component {
                     <Sidebar/>
                 </div>
                 <div className="col-10 home">
-                    <Owl/>
-                    <div className="row">
-                        {this.state.cardItems}
+                    <div className="container-fluid">
+                        <Owl/>
+                        <div className="row">
+                            {this.state.cardItems}
+                        </div>
+                        <Skills />
+                        <Block />
+
                     </div>
                 </div>
             </div>
