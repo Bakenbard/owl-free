@@ -7,6 +7,7 @@ import Contacts from "./components/Contacts";
 import Fitting from "./components/Fitting";
 import Profile from "./components/Profile";
 import SingleItem from "./components/SingleItemPage";
+import Footer from "./components/Footer";
 
 
 function App(props) {
@@ -20,6 +21,9 @@ function App(props) {
                     <Route path="/fitting" component={Fitting}/>
                     <Route path="/lk" render={() => <Profile getUser={props.getUser}/>}/>
                     <Route path="/item" component={SingleItem}/>
+                </div>
+                <div className="container">
+                    <Footer/>
                 </div>
             </BrowserRouter>
     );

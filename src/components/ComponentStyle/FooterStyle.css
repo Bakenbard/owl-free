@@ -1,0 +1,25 @@
+.footer {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    align-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.icons {
+    text-align: center;
+    display: inline;
+    margin-top: 1rem;
+}
+.logo {
+    width: 50%;
+    display: inline;
+    text-align: center;
+    margin-top: 1rem;
+}
+.ss {
+    color: rgb(214, 168, 46);
+}
